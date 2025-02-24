@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "Article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "isArticle": {
+      "type": "boolean",
+      "default": true
+    },
+    "cover": {
+      "type": "string"
+    }
+  }
+}

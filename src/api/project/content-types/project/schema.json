@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "project_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project-type.project-type"
+    },
+    "technologies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::technology.technology"
+    },
+    "cover": {
+      "type": "string"
+    }
+  }
+}
